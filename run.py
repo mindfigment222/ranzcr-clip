@@ -44,10 +44,10 @@ data_transforms = {
     ])
 }
 
-with open('train_val_split.pkl', 'rb') as f:
+with open('./data/train_val_split.pkl', 'rb') as f:
     partition = pickle.load(f)
 
-with open('malpositions.pkl', 'rb') as f:
+with open('./data/malpositions.pkl', 'rb') as f:
     malpositions = pickle.load(f)
 
 train_dataset_params = {
